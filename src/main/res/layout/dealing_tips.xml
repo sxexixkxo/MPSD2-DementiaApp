@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/homepage_background"
+    tools:context=".DealingTips">
+
+    <ScrollView
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/dealing_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/dealing_title"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:textColor="@color/fontPurple"/>
+
+            <TextView
+                android:id="@+id/dealing_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:padding="5dp"
+                android:text="@string/dealing_tips"
+                android:textAlignment="center"
+                android:textColor="@color/contentFont"
+                android:textSize="19sp" />
+
+            <Button
+                android:id="@+id/view_cert_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginEnd="60dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="10dp"
+                android:text= "View Certificate"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:textColor="@color/btnFontPurple"
+                android:fontFamily="sans-serif-condensed-medium"/>
+
+            <ProgressBar
+                android:id="@+id/dealingProgressBar"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:progress="66"
+                app:layout_constraintTop_toBottomOf="@+id/view_cert_button" />
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>
